@@ -1,5 +1,6 @@
 # mayumi-hyprland
 Dotfiles for my hyprland rice
+<img width="1920" height="1080" alt="2025-11-07-025640_hyprshot" src="https://github.com/user-attachments/assets/75fd2c15-5772-47c1-ad19-d52dae5d12d3" />
 
 run ./stow.sh
 
