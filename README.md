@@ -2,6 +2,9 @@
 Dotfiles for my hyprland rice
 <img width="1920" height="1080" alt="2025-11-07-025640_hyprshot" src="https://github.com/user-attachments/assets/75fd2c15-5772-47c1-ad19-d52dae5d12d3" />
 
+<img width="1920" height="1080" alt="2025-11-07-025814_hyprshot" src="https://github.com/user-attachments/assets/12799888-66ab-4b2d-9409-cdd53b2f2e5c" />
+
+
 run ./stow.sh
 
 oh-my-zsh is used for zsh customization
