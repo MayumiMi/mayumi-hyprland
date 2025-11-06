@@ -1,0 +1,189 @@
+* {
+min-height: 0;
+min-width: 0;
+font-family: Lexend, "JetBrainsMono NFP";
+font-size: 13px;
+font-weight: 600;
+}
+
+window#waybar {
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  /* background-color: #1e1e2e; */
+  /* background-color: #181825; */
+  /* background-color: #11111b; */
+  /* background-color: rgba(24, 24, 37, 0.6); */
+  background-color: rgba(0,0,0,0);
+}
+
+#workspaces button {
+padding: 0.3rem 0.7rem;
+margin: 0.4rem 0.25rem;
+border-radius: 10px;
+/* background-color: #181825; */
+background-color: #1e1e2e;
+color: #cdd6f4;
+}
+
+#workspaces button:hover {
+color: #7f849c;
+background-color: #cdd6f4;
+}
+
+#workspaces button.active {
+background-color: #1e1e2e;
+color: #cba6f7;
+}
+
+#workspaces button.urgent {
+background-color: #1e1e2e;
+color: #f38ba8;
+}
+
+#clock,
+#pulseaudio,
+#custom-logo,
+#custom-power,
+#custom-spotify,
+#custom-notification,
+#cpu,
+#tray,
+#memory,
+#window,
+#mpris,
+#network,
+#bluetooth,
+#battery,
+#power-profiles-daemon,
+#backlight,
+#custom-pacman {
+padding: 0.1rem 0.6rem;
+margin: 0.4rem 0.25rem;
+border-radius: 10px;
+/* background-color: #181825; */
+background-color: #1e1e2e;
+min-width: 1rem;
+}
+
+#backlight {
+  color:#b4befe;
+}
+
+#mpris.playing {
+color: #b4befe;
+}
+
+#mpris.paused {
+color: #9399b2;
+}
+
+#custom-sep {
+padding: 0px;
+color: #585b70;
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
+}
+
+#cpu {
+color: #94e2d5;
+}
+
+#memory {
+color: #cba6f7;
+}
+
+#clock {
+color: #a6e3a1;
+}
+
+#clock.simpleclock {
+color: #cba6f7;
+}
+
+#window {
+color: #cdd6f4;
+}
+
+#pulseaudio {
+color: #89dceb;
+}
+
+#pulseaudio.muted {
+color: #a6adc8;
+}
+
+#custom-notification {
+color: #fab387;
+}
+
+#custom-power {
+color: #f38ba8;
+}
+
+/* --- Added Modules --- */
+
+#network {
+color: #f9e2af; /* Yellow */
+}
+
+#network.disconnected {
+color: #a6adc8; /* Subtext0 */
+}
+
+#bluetooth {
+color: #89b4fa; /* Blue */
+}
+
+#bluetooth.disabled {
+color: #a6adc8; /* Subtext0 */
+}
+
+#battery {
+/* color: #f5c2e7; */
+color: #a6e3a1;
+}
+
+#battery.charging, #battery.full {
+/* color: #a6e3a1; */
+color: #74c7ec;
+}
+
+#battery.warning {
+color: #fab387; /* Peach */
+}
+
+#battery.critical {
+color: #f38ba8; /* Red */
+}
+
+/* --- Power Profile Feedback --- */
+
+#power-profiles-daemon {
+color: #cdd6f4; /* Default color (Catppuccin Text) */
+}
+
+#power-profiles-daemon.performance {
+color: #eba0ac;
+}
+
+#power-profiles-daemon.balanced {
+color: #89b4fa; /* Blue */
+}
+
+#power-profiles-daemon.power-saver {
+color: #a6e3a1; /* Green */
+}
+
+#custom-pacman {
+color: #fab387; /* Orange */
+}
+
+/* --- Tooltip --- */
+
+tooltip {
+  background-color: #11111b;
+  border: 2px solid #89b4fa;
+  border-radius: 5px;
+}

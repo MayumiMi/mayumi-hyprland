@@ -1,0 +1,236 @@
+{
+  "layer": "bottom",
+  "position": "top",
+  "height": 40,
+  "margin-bottom": -10,
+  "margin-left": 5,
+  "margin-right": 5,
+  "spacing": 1,
+  "exclusive": true,
+  "gtk-layer-shell": true,
+  "passthrough": false,
+  "fixed-center": true,
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["mpris"],
+  "modules-right": [
+    "network",
+    "bluetooth",
+    "pulseaudio",
+    "clock",
+    "clock#simpleclock",
+    "backlight",
+    "tray",
+    "battery",
+    "power-profiles-daemon",
+    "custom/notification",
+    "custom/power",
+  ],
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+    "tooltip": true,
+    "format-icons": {
+      "default": "",
+      "performance": "󱡂",
+      "balanced": "󰳒",
+      "power-saver": ""
+    }
+  },
+
+
+
+  "custom/spotify": {
+    "format": "  {}",
+    "return-type": "json",
+    "on-click": "playerctl -p spotify play-pause",
+    "on-click-right": "spotifatius toggle-liked",
+    "on-click-middle": "playerctl -p spotify next",
+    "exec": "spotifatius monitor",
+  },
+
+
+
+
+    "mpris": {
+    "player": "spotify",
+    // "dynamic-order": ["artist", "title"],
+    "format": "{player_icon} {artist} <span color='#f5c2e7'>-</span> <span color='#a6e3a1'>{title}</span>",
+    "format-paused": "{status_icon} <i>{artist} - <span color='#b4befe'>{title}</span></i>",
+    "status-icons": {
+      "paused": "",
+    },
+    "player-icons": {
+      "default": "<span color='#f5c2e7'>󱑽</span>",
+    },
+  },
+
+
+
+
+  "hyprland/workspaces": {
+    "on-click": "activate",
+    "format": "{id}",
+    "all-outputs": true,
+    "disable-scroll": false,
+    "active-only": false,
+  },
+
+  "backlight": {
+    // "device": "acpi_video1",
+    "format": "{icon} {percent}%",
+    "format-icons": ["", "", "", "", "", "", "", "", ""],
+    "tooltip": false,
+  },
+
+
+
+  "hyprland/window": {
+    "format": "{title}",
+  },
+
+
+
+
+  "tray": {
+    "show-passive-items": true,
+    "spacing": 10,
+  },
+
+
+
+
+  "clock#simpleclock": {
+    "tooltip": false,
+    "format": "{:%H:%M}", // 
+    "on-click":"kitty --hold arttime"
+  },
+
+
+
+
+  "clock": {
+    "format": " {:L%a %d %b}",
+    "calendar": {
+      "format": {
+        "days": "<span weight='normal'>{}</span>",
+        "months": "<span color='#cdd6f4'><b>{}</b></span>",
+        "today": "<span color='#f38ba8' weight='700'><u>{}</u></span>",
+        "weekdays": "<span color='#f9e2af'><b>{}</b></span>",
+        "weeks": "<span color='#a6e3a1'><b>W{}</b></span>",
+      },
+      "mode": "month",
+      "mode-mon-col": 1,
+      "on-scroll": 1,
+    },
+    "tooltip-format": "<span color='#cdd6f4' font='13'><tt><small>{calendar}</small></tt></span>",
+  },
+
+
+
+
+  "cpu": {
+    "format": " {usage}%",
+    "tooltip": true,
+    "interval": 1,
+  },
+
+
+
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": " muted",
+    "format-icons": {
+      "headphone": "",
+      "default": ["", "", ""],
+    },
+    "on-click": "pavucontrol",
+    "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+  },
+
+
+
+
+  "custom/sep": {
+    "format": "|",
+    "tooltip": false,
+  },
+
+
+
+
+  "custom/power": {
+    "tooltip": false,
+    "on-click": "~/.config/wlogout/logoutlaunch.sh",
+    "format": "⏻",
+  },
+
+
+
+
+  "custom/notification": {
+    "escape": true,
+    "exec": "swaync-client -swb",
+    "exec-if": "which swaync-client",
+    "format": "{icon}",
+    "format-icons": {
+      "none": "󰅺",
+      "notification": "󰡟",
+      "dnd-none": "󰂛"
+    },
+    "on-click": "sleep 0.1 && swaync-client -t -sw",
+    "return-type": "json",
+    "tooltip": false,
+  },
+
+
+  "network": {
+    "format-wifi": "{icon} {essid}",
+
+    "format-icons": ["󰤟", "󰤢", "󰤥", "󰤨"],
+    "format-ethernet": "",
+    "format-disconnected": "󰖪",
+    "tooltip-format": "{ifname} ({ipaddr}/{cidr})  {gwaddr}",
+    "on-click": "hyprctl dispatch exec '[float] nm-connection-editor'",
+    "on-click-right": "kitty --hold glow ~/nmcli-cheatsheet.md",
+  },
+
+
+  "bluetooth": {
+    "format": "󰂯",
+    "format-connected": "󰂯 {device_alias}",
+    "format-disabled": "󰂲",
+    "format-icons": {
+      "disabled": "󰂲"
+    },
+    "on-click": "hyprctl dispatch exec '[float; size 600 500] blueman-manager'",
+    "tooltip-format-connected": "{device_alias}\n{device_address}"
+  },
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-icons": ["", "", "", "", ""],
+    "format-time": "{H}h{M}min",
+    "format-charging": "󰂄 {capacity}%",
+    "format-full": "",
+    "tooltip-format": "{time} {power} W",
+    "tooltip-format-full": "{power} W",
+    "tooltip-format-charging": "{power} W", // I can't get estimate until full working pls help
+    "interval": 60,
+    "states": {
+        "warning": 25,
+        "critical": 10
+    },
+    "tooltip": true,
+  },
+
+  /*
+  "custom/pacman": {
+    "format": "󰅢 {}",
+    "interval": "once",
+    "exec": "checkupdates | wc -l",
+    "on-click": "kitty --hold yay -Syu",
+    "signal": 8,
+    "tooltip-format": "{} update available"
+  }
+  */
+}
