@@ -1,6 +1,8 @@
 # mayumi-hyprland
 Dotfiles for my hyprland rice
 
+run ./stow.sh
+
 oh-my-zsh is used for zsh customization
 
 Username mayumi is recommended, since some of the config file such as for the packages below doesn't seem to support ~/ or $HOME/ file path
