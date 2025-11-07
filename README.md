@@ -18,6 +18,151 @@ Clone this repo to your /home directory and then run `./stow.sh`
 
 Make sure to backup and delete your current configuration files.
 
+---
+
+## Packages
+Essential packages such as `base`, `linux`, `linux-firmware`, `base-devel`, `grub`, `efibootmgr`, `neovim` and `networkmanager` from arch wiki are expected to be already installed.
+
+These are the other packages I have installed on my system
+
+##
+
+### AMD CPU
+- amd-ucode
+
+```
+sudo pacman -S amd-ucode
+```
+
+##
+
+### AMD GPU
+- amdgpu_top
+- lib32-vulkan-radeon
+- vulkan-radeon
+
+```
+sudo pacman -S amdgpu_top lib32-vulkan-radeon vulkan-radeon
+```
+
+##
+
+### NVIDIA GPU
+- lib32-nvidia-utils
+- libva-nvidia-driver
+- linux-headers
+- nvidia-dkms
+
+```
+sudo pacman -S lib32-nvidia-utils libva-nvidia-driver linux-headers nvidia-dkms
+```
+
+##
+
+### pacman
+- archlinux-xdg-menu
+- blueman
+- bluez-utils
+- brightnessctl
+- dolphin
+- fastfetch
+- git
+- glow
+- hyprland
+- hyprlock
+- hyprpaper
+- hyprpolkitagent
+- hyprshot
+- kitty
+- kvantum
+- libibus
+- libva-utils
+- libwebp-utils
+- nm-connection-editor
+- ntfs-3g
+- nwg-look
+- pavucontrol
+- pipewire
+- pipewire-pulse
+- power-profiles-daemon
+- python-goobject
+- qt5-wayland
+- qt6-wayland
+- sof-firmware
+- stow
+- swaync
+- waybar
+- wireplumber
+- wofi
+- xdg-desktop-portal-hyprland
+- zsh
+
+```
+sudo pacman -S archlinux-xdg-menu blueman bluez-utils brightnessctl dolphin fastfetch git glow hyprland hyprlock hyprpaper hyprpolkitagent hyprshot kitty kvantum libibus libva-utils libwebp-utils nm-connection-editor ntfs-3g nwg-look pavucontrol pipewire pipewire-pulse power-profiles-daemon python-gobject qt5-wayland qt6-wayland sof-firmware stow swaync waybar wireplumber wofi xdg-desktop-portal-hyprland zsh
+```
+
+**Optional:**
+- ark
+- btop
+- mpv
+- qbittorrent
+- steam
+- tree
+- unrar
+
+```
+sudo pacman -S ark btop mpv qbittorrent steam tree unrar
+```
+
+##
+
+### AUR
+- arttime-git
+- catppuccin-cursors-mocha
+- catppuccin-gtk-theme-git
+- cloudflare-warp-bin
+- nomacs
+- papirus-folders-catppuccin-git
+- pfetch
+- proton-cachyos
+- proton-ge-custom-bin
+- qt6ct-kde
+- sleepy-launcher-bin
+- spicetify-cli
+- spicetify-themes-git
+- spotify
+- unimatrix-git
+- wlogout
+- yay
+- zen-browser-bin
+- zoom
+
+You need to install `yay` before using this command.
+
+```
+yay -S arttime-git catppuccin-cursors-mocha catppuccin-gtk-theme-git cloudflare-warp-bin nomacs papirus-folders-catppuccin-git pfetch proton-cachyos proton-ge-custom-bin qt6ct-kde sleepy-launcher-bin spicetify-cli spicetify-themes-git spotify unimatrix-git wlogout yay zen-browser-bin zoom
+```
+
+---
+
+## Fonts
+What I have installed in my system are as follows:
+- noto-fonts
+- noto-fonts-cjk
+- noto-fonts-emoji
+- otf-font-awesome
+- ttf-cascadia-mono-nerd
+- ttf-font
+- ttf-iosevka-nerd
+- ttf-jetbrains-mono-nerd
+- woff2-font-awesome
+
+```
+yay -S ttf-iosevka-nerd ttf-jetbrains-mono-nerd ttf-caskaydia-mono-nerd ttf-font noto-fonts noto-fonts-cjk noto-fonts-emoji otf-font-awesome
+```
+
+---
+
 ## Steps before using
 
 ### zsh
@@ -63,23 +208,4 @@ For spicetify, follow the installation method from the website.
 Then, you need to change the **prefs_path** inside `~/.config/spicetify/config-xpui.ini` to your spotify path.
 
 The **theme** and **extension** are included inside the spicetify config directory.
-
-##
-
-### Fonts
-What I have installed in my system are as follows.
-- ttf-iosevka-nerd
-- ttf-jetbrains-mono-nerd
-- ttf-caskaydia-mono-nerd
-- ttf-font
-- noto-fonts
-- noto-fonts-cjk
-- noto-fonts-emoji
-- otf-font-awesome
-
-Fonts install:
-
-```bash
-yay -S ttf-iosevka-nerd ttf-jetbrains-mono-nerd ttf-caskaydia-mono-nerd ttf-font noto-fonts noto-fonts-cjk noto-fonts-emoji otf-font-awesome
-```
 
