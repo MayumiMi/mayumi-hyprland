@@ -121,6 +121,7 @@ sudo pacman -S ark btop mpv qbittorrent steam tree unrar
 - catppuccin-cursors-mocha
 - catppuccin-gtk-theme-git
 - cloudflare-warp-bin
+- localsend
 - nomacs
 - papirus-folders-catppuccin-git
 - pfetch
