@@ -125,6 +125,7 @@ sudo pacman -S archlinux-xdg-menu blueman bluez-utils brightnessctl dolphin fast
 **Optional:**
 - ark
 - btop
+- mangohud
 - mpv
 - qbittorrent
 - steam
@@ -132,7 +133,7 @@ sudo pacman -S archlinux-xdg-menu blueman bluez-utils brightnessctl dolphin fast
 - unrar
 
 ```
-sudo pacman -S ark btop mpv qbittorrent steam tree unrar
+sudo pacman -S ark btop mangohud mpv qbittorrent steam tree unrar
 ```
 
 ##
