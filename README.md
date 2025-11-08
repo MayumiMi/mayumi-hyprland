@@ -41,7 +41,7 @@ sudo pacman -S amd-ucode
 - vulkan-radeon
 
 ```
-sudo pacman -S amdgpu_top lib32-vulkan-radeon vulkan-radeon
+sudo pacman -S lib32-vulkan-radeon vulkan-radeon
 ```
 
 ##
@@ -85,7 +85,6 @@ sudo pacman -S lib32-nvidia-utils libva-nvidia-driver linux-headers nvidia-dkms
 - python-goobject
 - qt5-wayland
 - qt6-wayland
-- sof-firmware
 - stow
 - swaync
 - waybar
@@ -95,7 +94,7 @@ sudo pacman -S lib32-nvidia-utils libva-nvidia-driver linux-headers nvidia-dkms
 - zsh
 
 ```
-sudo pacman -S archlinux-xdg-menu blueman bluez-utils brightnessctl dolphin fastfetch git glow hyprland hyprlock hyprpaper hyprpolkitagent hyprshot kitty kvantum libibus libva-utils libwebp-utils nm-connection-editor ntfs-3g nwg-look pavucontrol pipewire pipewire-pulse power-profiles-daemon python-gobject qt5-wayland qt6-wayland sof-firmware stow swaync waybar wireplumber wofi xdg-desktop-portal-hyprland zsh
+sudo pacman -S archlinux-xdg-menu blueman bluez-utils brightnessctl dolphin fastfetch git glow hyprland hyprlock hyprpaper hyprpolkitagent hyprshot kitty kvantum libibus nm-connection-editor ntfs-3g nwg-look pavucontrol pipewire pipewire-pulse power-profiles-daemon python-gobject qt5-wayland qt6-wayland stow swaync waybar wireplumber wofi xdg-desktop-portal-hyprland zsh
 ```
 
 **Optional:**
@@ -127,7 +126,6 @@ sudo pacman -S ark btop mpv qbittorrent steam tree unrar
 - qt6ct-kde
 - sleepy-launcher-bin
 - spicetify-cli
-- spicetify-themes-git
 - spotify
 - unimatrix-git
 - wlogout
@@ -138,7 +136,7 @@ sudo pacman -S ark btop mpv qbittorrent steam tree unrar
 You need to install `yay` before using this command.
 
 ```
-yay -S arttime-git catppuccin-cursors-mocha catppuccin-gtk-theme-git cloudflare-warp-bin nomacs papirus-folders-catppuccin-git pfetch proton-cachyos proton-ge-custom-bin qt6ct-kde sleepy-launcher-bin spicetify-cli spicetify-themes-git spotify unimatrix-git wlogout yay zen-browser-bin zoom
+yay -S arttime-git catppuccin-cursors-mocha catppuccin-gtk-theme-git cloudflare-warp-bin nomacs papirus-folders-catppuccin-git pfetch proton-cachyos proton-ge-custom-bin qt6ct-kde sleepy-launcher-bin spicetify-cli spotify unimatrix-git wlogout yay zen-browser-bin zoom
 ```
 
 ---
