@@ -75,8 +75,6 @@ sudo pacman -S lib32-nvidia-utils libva-nvidia-driver linux-headers nvidia-dkms
 - kitty
 - kvantum
 - libibus
-- libva-utils
-- libwebp-utils
 - nm-connection-editor
 - ntfs-3g
 - nwg-look
