@@ -37,7 +37,6 @@ sudo pacman -S amd-ucode
 ##
 
 ### AMD GPU
-- amdgpu_top
 - lib32-vulkan-radeon
 - vulkan-radeon
 
