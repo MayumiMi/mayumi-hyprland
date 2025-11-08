@@ -12,11 +12,11 @@ Dotfiles for my Hyprland rice.
 ---
 
 ## Usage
-After installing Hyprland and installing the required packages from the wiki.
+After installing Hyprland and installing the required packages from the wiki and the package list below.
 
-Clone this repo to your /home directory and then run `./stow.sh`
+First make sure to **backup and delete** your current configuration files.
 
-Make sure to backup and delete your current configuration files.
+Then clone this repo to your **/home** directory and run `./stow.sh`
 
 ---
 
