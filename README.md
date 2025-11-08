@@ -27,6 +27,29 @@ These are the other packages I have installed on my system
 
 ##
 
+### Acer Battery Limit
+`acer-wmi-battery-dkms-git` from AUR are used to manage the battery limiter on Acer laptops.
+
+To activate the battery limiter (or health mode):
+```
+echo 1 | sudo tee /sys/bus/wmi/drivers/acer-wmi-battery/health_mode
+```
+
+To deactivate the battery limiter:
+```
+echo 0 | sudo tee /sys/bus/wmi/drivers/acer-wmi-battery/health_mode
+```
+
+So far, the limiter is persistent between reboot from my testing.
+
+**Dual Boot Scenario with Windows 11**
+
+It is also not independent, because I can change the settings from Windows 11, and Windows 11 can also change the settings from there through Acer Sense. Both sides can change the settings.
+
+If I set the limit from Windows 11, it will carry over to Arch Linux. Because of that, I'm guessing that setting it through acer-wmi-battery also carries it over to Windows 11.
+
+##
+
 ### AMD CPU
 - amd-ucode
 
