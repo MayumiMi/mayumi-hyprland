@@ -187,6 +187,13 @@ yay -S ttf-iosevka-nerd ttf-jetbrains-mono-nerd ttf-caskaydia-mono-nerd ttf-font
 
 ## Steps before using
 
+### Captive Portals
+For handling the wifi with captive portal, I use [captive-portal-sh](https://github.com/Seme4eg/captive-portal-sh.git). 
+
+It will handle figuring out the captive portal url and open its page in default browser.
+
+##
+
 ### zsh
 **oh-my-zsh** is used for zsh customization.  
 
