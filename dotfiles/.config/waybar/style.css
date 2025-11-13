@@ -13,7 +13,7 @@ window#waybar {
   /* background-color: #181825; */
   /* background-color: #11111b; */
   /* background-color: rgba(24, 24, 37, 0.6); */
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0,0,0,0.1);
 }
 
 #workspaces button {
