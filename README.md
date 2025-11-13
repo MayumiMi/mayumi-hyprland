@@ -141,6 +141,7 @@ sudo pacman -S ark btop mangohud mpv qbittorrent steam tree unrar
 ##
 
 ### AUR
+- anki
 - arttime-git
 - catppuccin-cursors-mocha
 - catppuccin-gtk-theme-git
@@ -164,7 +165,7 @@ sudo pacman -S ark btop mangohud mpv qbittorrent steam tree unrar
 You need to install `yay` before using this command.
 
 ```
-yay -S arttime-git catppuccin-cursors-mocha catppuccin-gtk-theme-git cloudflare-warp-bin nomacs papirus-folders-catppuccin-git pfetch proton-cachyos proton-ge-custom-bin qt6ct-kde sleepy-launcher-bin spicetify-cli spotify unimatrix-git wlogout yay zen-browser-bin zoom
+yay -S anki arttime-git catppuccin-cursors-mocha catppuccin-gtk-theme-git cloudflare-warp-bin nomacs papirus-folders-catppuccin-git pfetch proton-cachyos proton-ge-custom-bin qt6ct-kde sleepy-launcher-bin spicetify-cli spotify unimatrix-git wlogout yay zen-browser-bin zoom
 ```
 
 ---
@@ -239,4 +240,26 @@ For spicetify, follow the installation method from the website.
 Then, you need to change the **prefs_path** inside `~/.config/spicetify/config-xpui.ini` to your spotify path.
 
 The **theme** and **extension** are included inside the spicetify config directory.
+
+##
+
+### Printer
+For my usage with an Epson L3250 printer, I installed `epson-inkjet-printer-escpr` from AUR.
+
+First install `cups` from the official arch repo if not installed.
+
+Then check if it's enabled or not, if not enable it.
+```
+sudo systemctl status cups
+```
+
+```
+sudo systemctl start cups
+```
+
+```
+sudo systemctl enable cups # start on boot
+```
+
+Then open [http://localhost:631/admin](http://localhost:631/admin) to add your printer.
 
