@@ -11,6 +11,10 @@ Dotfiles for my Hyprland rice.
 
 ---
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/edc73e34-7539-4f32-9fc0-5c989c4d1a16" />
+
+---
+
 ## Usage
 After installing Hyprland and installing the required packages from the wiki and the package list below.
 
