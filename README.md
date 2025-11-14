@@ -91,6 +91,7 @@ sudo pacman -S lib32-nvidia-utils libva-nvidia-driver linux-headers nvidia-dkms
 - blueman
 - bluez-utils
 - brightnessctl
+- cava
 - dolphin
 - fastfetch
 - git
@@ -125,7 +126,7 @@ sudo pacman -S lib32-nvidia-utils libva-nvidia-driver linux-headers nvidia-dkms
 - zsh
 
 ```
-sudo pacman -S archlinux-xdg-menu audacity blueman bluez-utils brightnessctl dolphin fastfetch git github-cli glow hyprland hyprlock hyprpaper hyprpolkitagent hyprshot kitty kvantum libibus libwebp-utils nm-connection-editor ntfs-3g nwg-look pavucontrol pipewire pipewire-pulse power-profiles-daemon python-gobject qalculate-qt qt5-wayland qt6-wayland stow swaync waybar wireplumber wofi xdg-desktop-portal-hyprland zsh
+sudo pacman -S archlinux-xdg-menu audacity blueman bluez-utils brightnessctl cava dolphin fastfetch git github-cli glow hyprland hyprlock hyprpaper hyprpolkitagent hyprshot kitty kvantum libibus libwebp-utils nm-connection-editor ntfs-3g nwg-look pavucontrol pipewire pipewire-pulse power-profiles-daemon python-gobject qalculate-qt qt5-wayland qt6-wayland stow swaync waybar wireplumber wofi xdg-desktop-portal-hyprland zsh
 ```
 
 **Optional:**
