@@ -11,13 +11,15 @@
   "passthrough": false,
   "fixed-center": true,
   "modules-left": ["hyprland/workspaces"],
-  "modules-center": ["mpris"],
+  "modules-center": [
+    "clock#simpleclock",
+    "mpris",
+  ],
   "modules-right": [
     "network",
     "bluetooth",
     "pulseaudio",
     "clock",
-    "clock#simpleclock",
     "backlight",
     "tray",
     "battery",
@@ -109,7 +111,8 @@
 
 
   "clock": {
-    "format": " {:L%a %d %b}",
+    /* "format": " {:L%a %d %b}", */ 
+    "format": " {:%d %b}",
     "calendar": {
       "format": {
         "days": "<span weight='normal'>{}</span>",
