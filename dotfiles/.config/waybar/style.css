@@ -19,7 +19,7 @@ window#waybar {
 #workspaces button {
 padding: 0.3rem 0.7rem;
 margin: 0.4rem 0.25rem;
-border-radius: 14px;
+border-radius: 12px;
 /* background-color: #181825; */
 background-color: #1e1e2e;
 color: #cdd6f4;
@@ -59,7 +59,7 @@ color: #f38ba8;
 #custom-pacman {
 padding: 0.1rem 0.6rem;
 margin: 0.4rem 0.25rem;
-border-radius: 14px;
+border-radius: 12px;
 /* background-color: #181825; */
 background-color: #1e1e2e;
 min-width: 1rem;
@@ -101,8 +101,8 @@ color: #f5c2e7;
 #clock.simpleclock {
 /* color: #cba6f7; */
 color: #ffffff;
-background-color: rgba(0,0,0,0);
-font-size: 15px;
+/* background-color: rgba(0,0,0,0); */
+/* font-size: 15px; */
 }
 
 #window {
