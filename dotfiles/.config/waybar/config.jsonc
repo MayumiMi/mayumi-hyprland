@@ -5,15 +5,15 @@
   "margin-bottom": 0,
   "margin-left": 0,
   "margin-right": 0,
-  "spacing": 1,
+  "spacing": 0,
   "exclusive": true,
   "gtk-layer-shell": true,
   "passthrough": false,
   "fixed-center": true,
   "modules-left": ["hyprland/workspaces"],
   "modules-center": [
-    "clock#simpleclock",
     "mpris",
+    "clock#simpleclock",
   ],
   "modules-right": [
     "network",

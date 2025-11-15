@@ -18,7 +18,7 @@ window#waybar {
 
 #workspaces button {
 padding: 0.3rem 0.7rem;
-margin: 0.4rem 0.25rem;
+margin: 0.4rem 0.2rem;
 border-radius: 12px;
 /* background-color: #181825; */
 background-color: #1e1e2e;
@@ -58,7 +58,7 @@ color: #f38ba8;
 #backlight,
 #custom-pacman {
 padding: 0.1rem 0.6rem;
-margin: 0.4rem 0.25rem;
+margin: 0.4rem 0.2rem; 
 border-radius: 12px;
 /* background-color: #181825; */
 background-color: #1e1e2e;
