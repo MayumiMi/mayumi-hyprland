@@ -13,7 +13,8 @@ window#waybar {
   /* background-color: #181825; */
   /* background-color: #11111b; */
   /* background-color: rgba(24, 24, 37, 0.6); */
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(0,0,0,0);
+
 }
 
 #workspaces button {
@@ -21,7 +22,8 @@ padding: 0.3rem 0.7rem;
 margin: 0.4rem 0.2rem;
 border-radius: 12px;
 /* background-color: #181825; */
-background-color: #1e1e2e;
+/* background-color: #1e1e2e; */
+background-color: rgba(29, 29, 46, 0.8);
 color: #cdd6f4;
 }
 
@@ -41,6 +43,7 @@ color: #f38ba8;
 }
 
 #clock,
+#clock.simpleclock,
 #pulseaudio,
 #custom-logo,
 #custom-power,
@@ -61,7 +64,8 @@ padding: 0.1rem 0.6rem;
 margin: 0.4rem 0.2rem; 
 border-radius: 12px;
 /* background-color: #181825; */
-background-color: #1e1e2e;
+/* background-color: #1e1e2e; */
+background-color: rgba(29, 29, 46, 0.8);
 min-width: 1rem;
 }
 
