@@ -112,7 +112,7 @@
 
   "clock": {
     /* "format": " {:L%a %d %b}", */ 
-    "format": " {:%d %b}",
+    "format": " {:%d %b %Y}",
     "calendar": {
       "format": {
         "days": "<span weight='normal'>{}</span>",
