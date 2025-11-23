@@ -20,7 +20,7 @@ After installing Hyprland and installing the required packages from the wiki and
 
 First make sure to **backup and delete** your current configuration files.
 
-Then clone this repo to your **/home** directory and run `./stow.sh`
+Then clone this repo to your **/home** directory, install `stow`, and run `./stow.sh`
 
 ---
 
@@ -86,7 +86,7 @@ sudo pacman -S lib32-nvidia-utils libva-nvidia-driver linux-headers nvidia-dkms
 ##
 
 ### pacman
-- archlinux-xdg-menu
+- archlinux-xdg-menu (to fix empty "open with" in dolphin)
 - audacity
 - blueman
 - bluez-utils
@@ -100,12 +100,11 @@ sudo pacman -S lib32-nvidia-utils libva-nvidia-driver linux-headers nvidia-dkms
 - hyprland
 - hyprlock
 - hyprpaper
-- hyprpolkitagent
+- hyprpolkitagent (GUI app to be able to request elevated privileges)
 - hyprshot
-- iperf3
 - kitty
 - kvantum
-- libibus
+- libibus (maybe a dependency, not sure yet)
 - libwebp-utils (for sleepy-launcher-bin)
 - nm-connection-editor
 - ntfs-3g
@@ -114,7 +113,7 @@ sudo pacman -S lib32-nvidia-utils libva-nvidia-driver linux-headers nvidia-dkms
 - pipewire
 - pipewire-pulse
 - power-profiles-daemon
-- python-goobject
+- python-goobject (maybe a dependency, not sure yet)
 - qalculate-qt
 - qt5-wayland
 - qt6-wayland
@@ -123,16 +122,17 @@ sudo pacman -S lib32-nvidia-utils libva-nvidia-driver linux-headers nvidia-dkms
 - waybar
 - wireplumber
 - wofi
-- xdg-desktop-portal-hyprland-git (currently working on zoom but broke after a window resize)
+- xdg-desktop-portal-hyprland-git (currently working to screenshare on zoom but broke after a window resize)
 - zsh
 
 ```
-sudo pacman -S archlinux-xdg-menu audacity blueman bluez-utils brightnessctl cava dolphin fastfetch git github-cli glow hyprland hyprlock hyprpaper hyprpolkitagent hyprshot iperf3 kitty kvantum libibus libwebp-utils nm-connection-editor ntfs-3g nwg-look pavucontrol pipewire pipewire-pulse power-profiles-daemon python-gobject qalculate-qt qt5-wayland qt6-wayland stow swaync waybar wireplumber wofi xdg-desktop-portal-hyprland zsh
+sudo pacman -S archlinux-xdg-menu audacity blueman bluez-utils brightnessctl cava dolphin fastfetch git github-cli glow hyprland hyprlock hyprpaper hyprpolkitagent hyprshot kitty kvantum libibus libwebp-utils nm-connection-editor ntfs-3g nwg-look pavucontrol pipewire pipewire-pulse power-profiles-daemon python-gobject qalculate-qt qt5-wayland qt6-wayland stow swaync waybar wireplumber wofi xdg-desktop-portal-hyprland zsh
 ```
 
 **Optional:**
 - ark
 - btop
+- iperf3
 - mangohud
 - mpv
 - qbittorrent
@@ -141,7 +141,7 @@ sudo pacman -S archlinux-xdg-menu audacity blueman bluez-utils brightnessctl cav
 - unrar
 
 ```
-sudo pacman -S ark btop mangohud mpv qbittorrent steam tree unrar
+sudo pacman -S ark btop iperf3 mangohud mpv qbittorrent steam tree unrar
 ```
 
 ##
