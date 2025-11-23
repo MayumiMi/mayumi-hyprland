@@ -92,6 +92,7 @@ sudo pacman -S lib32-nvidia-utils libva-nvidia-driver linux-headers nvidia-dkms
 - bluez-utils
 - brightnessctl
 - cava
+- cliphist (for clipboard manager)
 - dolphin
 - fastfetch
 - git
