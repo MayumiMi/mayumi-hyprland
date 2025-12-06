@@ -122,7 +122,7 @@ sudo pacman -S lib32-nvidia-utils libva-nvidia-driver linux-headers nvidia-dkms
 - waybar
 - wireplumber
 - wofi
-- xdg-desktop-portal-hyprland-git (currently working to screenshare on zoom but broke after a window resize)
+- xdg-desktop-portal-hyprland (currently working to screenshare on zoom but broke after a window resize)
 - zsh
 
 ```
