@@ -77,10 +77,10 @@ sudo pacman -S lib32-vulkan-radeon vulkan-radeon
 - lib32-nvidia-utils
 - libva-nvidia-driver
 - linux-headers
-- nvidia-dkms
+- nvidia-open-dkms
 
 ```
-sudo pacman -S lib32-nvidia-utils libva-nvidia-driver linux-headers nvidia-dkms
+sudo pacman -S lib32-nvidia-utils libva-nvidia-driver linux-headers nvidia-open-dkms
 ```
 
 ##
