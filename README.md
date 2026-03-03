@@ -270,3 +270,6 @@ sudo systemctl enable cups # start on boot
 
 Then open [http://localhost:631/admin](http://localhost:631/admin) to add your printer.
 
+### Keyboard Layout (Graphite)
+On progress...
+
