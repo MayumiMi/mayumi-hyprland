@@ -97,7 +97,9 @@ sudo pacman -S lib32-nvidia-utils libva-nvidia-driver linux-headers nvidia-open-
 - fastfetch
 - git
 - github-cli
+- glib-networking (for mpris in swaync control center)
 - glow
+- gvfs (also for mpris in swaync, to display spotify album image)
 - hyprland
 - hyprlock
 - hyprpaper
@@ -127,7 +129,7 @@ sudo pacman -S lib32-nvidia-utils libva-nvidia-driver linux-headers nvidia-open-
 - zsh
 
 ```
-sudo pacman -S archlinux-xdg-menu audacity blueman bluez-utils brightnessctl cava cliphist dolphin fastfetch git github-cli glow hyprland hyprlock hyprpaper hyprpolkitagent hyprshot kitty kvantum libibus nm-connection-editor ntfs-3g nwg-look pavucontrol pipewire pipewire-pulse power-profiles-daemon python-gobject qalculate-qt qt5-wayland qt6-wayland stow swaync swayosd waybar wireplumber wofi xdg-desktop-portal-hyprland zsh
+sudo pacman -S archlinux-xdg-menu audacity blueman bluez-utils brightnessctl cava cliphist dolphin fastfetch git github-cli glib-networking glow gvfs hyprland hyprlock hyprpaper hyprpolkitagent hyprshot kitty kvantum libibus nm-connection-editor ntfs-3g nwg-look pavucontrol pipewire pipewire-pulse power-profiles-daemon python-gobject qalculate-qt qt5-wayland qt6-wayland stow swaync swayosd waybar wireplumber wofi xdg-desktop-portal-hyprland zsh
 ```
 
 **Optional:**
