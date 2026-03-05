@@ -1,0 +1,10 @@
+@define-color background #1e1e2e; /* Mocha Base - main background */
+@define-color foreground #cdd6f4; /* Mocha Text - main text color */
+@define-color color1 #313244;     /* Mocha Surface0 - alternate backgrounds */
+@define-color color2 #f38ba8;     /* Mocha Red - urgent/critical */
+@define-color color3 #89b4fa;     /* Mocha Blue - selected */
+@define-color color5 #cba6f7;     /* Mocha Mauve - hover */
+@define-color color6 #74c7ec;     /* Mocha Sapphire - alternate selected */
+/*@import '../../.cache/wal/colors-waybar.css';*/
+@import 'themes/nova-dark/notifications.css';
+@import 'themes/nova-dark/central_control.css';

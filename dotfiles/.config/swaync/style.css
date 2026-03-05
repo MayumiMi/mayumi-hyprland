@@ -37,20 +37,28 @@ trough {
 }
 
 /* notifications */
+/* notification background */
 .notification-background {
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.8), inset 0 0 0 1px #51576d;
+  /* High transparency with a dark tint for readability */
+  background: rgba(30, 30, 30, 0.6); 
+  
+  /* Vibrant border matching your CC and MPRIS */
+  border: 2px solid rgba(186,194,222,1);
+  
+  /* Deep shadow to lift it off the blurred wallpaper */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  
   border-radius: 12.6px;
-  margin: 18px;
-  background: rgba(41, 44, 60, 0.6);
-  color: #c6d0f5;
+  margin: 10px; /* Reduced margin slightly for a cleaner look */
   padding: 0;
 }
 
 .notification-background .notification {
-  padding: 7px;
+  padding: 10px;
   border-radius: 12.6px;
+  /* Ensure the notification itself doesn't add a double background */
+  background: transparent; 
 }
-
 .notification-background .notification.critical {
   box-shadow: inset 0 0 7px 0 #e78284;
 }
@@ -135,10 +143,16 @@ trough {
 
 /* control center */
 .control-center {
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.8), inset 0 0 0 1px #414559;
+  /* Increase opacity to 0.9 or use a solid color like #181825 (Crust) */
+  background-color: rgba(30, 30, 30, 0.6); 
+  
+  /* Add a more visible border to define the edge */
+  border: 2px solid rgba(186,194,222,1); 
+  
+  /* Increase the outer shadow for a "floating" effect */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  
   border-radius: 12.6px;
-  background-color: rgba(48, 52, 70, 0.6);
-  color: #c6d0f5;
   padding: 14px;
 }
 
@@ -156,25 +170,108 @@ trough {
   opacity: 0.8;
 }
 
+/* Adds space below the Title and Clear All button */
+.control-center .widget-title {
+  margin-bottom: 20px; /* Adjust this value to your liking */
+}
+
+
+
+/* mpris */
+.widget-mpris {
+  padding: 0;
+  margin-bottom: 20px;
+  border-radius: 16px;
+}
+
+.widget-mpris .widget-mpris-player {
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px #000000BF;
+}
+
+.widget-mpris .widget-mpris-player .mpris-background {
+  filter: blur(6px);
+}
+
+.widget-mpris .widget-mpris-player .mpris-overlay {
+  padding: 16px;
+  background-color: #0000008C;
+}
+
+.widget-mpris .widget-mpris-player .mpris-overlay .widget-mpris-album-art {
+  border-radius: 12px;
+  box-shadow: 0px 0px 10px #000000BF;
+  -gtk-icon-size: 96px;
+  margin: 0 10px;
+}
+
+.widget-mpris .widget-mpris-player .mpris-overlay .widget-mpris-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #c6d0f5; /* Kept your theme color */
+}
+
+.widget-mpris .widget-mpris-player .mpris-overlay .widget-mpris-subtitle {
+  font-weight: normal;
+  font-size: 1.1rem;
+  color: #b5bfe2; /* Kept your theme color */
+}
+
+/* Player control buttons */
+.widget-mpris .widget-mpris-player .mpris-overlay > box > button {
+  box-shadow: inset 0 1px 2px #FFFFFF26, 0 2px 4px #00000066;
+  transition: all 0.26s ease;
+  border-radius: 30px;
+  color: #c6d0f5;
+  margin: 15px 5px 0px 5px;
+  padding: 2px;
+}
+
+.widget-mpris .widget-mpris-player .mpris-overlay button:hover {
+  background: #8282824D;
+}
+
+.widget-mpris .widget-mpris-player .mpris-overlay > box > button:hover {
+  transform: translateY(-2px);
+  transform: scale(1.06); /* Pop out effect on hover */
+}
+
+.widget-mpris > box > button {
+  border-radius: 30px;
+}
+
+.widget-mpris button image {
+  -gtk-icon-transform: scale(0.7);
+}
+
 .control-center .widget-title > label {
   color: #c6d0f5;
   font-size: 1.3em;
 }
 
 .control-center .widget-title button {
-  border-radius: 7px;
+  border-radius: 10px;
   color: #c6d0f5;
   background-color: #414559;
-  box-shadow: inset 0 0 0 1px #51576d;
+  box-shadow: inset 0 1px 2px #FFFFFF26, 0 2px 4px #00000066;
   padding: 8px;
+  transition: all 0.26s ease;
 }
 
 .control-center .widget-title button:hover {
-  background-color: #51576d;
+  background-color: #51576d; /* Slightly lighter on hover */
 }
 
 .control-center .widget-title button:active {
   background-color: #626880;
+}
+
+.control-center .widget-title button:disabled {
+  background-color: #303446; /* A darker, recessed background color */
+  color: #737994; /* Dimmed text color */
+  box-shadow: none; /* Removes the 3D shadow so it looks flat */
+  opacity: 0.5; /* Makes the whole button semi-transparent */
+  transform: none; /* Ensures it doesn't try to animate */
 }
 
 .control-center .notification-group {
@@ -195,28 +292,54 @@ scrollbar trough {
 }
 
 /* dnd */
+/* --- DND Widget Base --- */
 .widget-dnd {
   margin-top: 5px;
   border-radius: 8px;
   font-size: 1.1rem;
 }
 
+/* Base switch background */
 .widget-dnd > switch {
   font-size: initial;
   border-radius: 8px;
   background: #414559;
   box-shadow: none;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease; /* Fixed transition */
 }
 
+/* Base slider (the knob) */
+.widget-dnd > switch slider {
+  background: #51576d;
+  border-radius: 8px;
+  min-width: 16px;  /* Forces the knob to stay visible */
+  min-height: 16px; /* Forces the knob to stay visible */
+  transition: background-color 0.2s ease;
+}
+
+/* Checked state (Turned ON) */
 .widget-dnd > switch:checked {
   background: #8caaee;
 }
 
-.widget-dnd > switch slider {
-  background: #51576d;
-  border-radius: 8px;
+/* --- DND Hover States --- */
+
+/* Light up the switch background when hovered (Unchecked state) */
+.widget-dnd > switch:hover {
+  background: #51576d; 
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.1); 
 }
 
+/* Light up the switch when hovered AND it's turned on (Checked state) */
+.widget-dnd > switch:checked:hover {
+  background: #99d1fd; 
+  box-shadow: 0 0 8px #8caaee; 
+}
+
+/* Light up the little sliding knob itself on hover */
+.widget-dnd > switch:hover slider {
+  background: #737994; 
+}
 /* mpris */
 .widget-mpris-player {
   background: #414559;
