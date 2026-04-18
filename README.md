@@ -166,7 +166,7 @@ sudo pacman -S ark btop iperf3 mangohud mpv qbittorrent steam tree unrar
 - spicetify-cli
 - spotify
 - unimatrix-git
-- waytrogen
+- waypaper
 - wlogout
 - yay
 - zen-browser-bin
@@ -175,7 +175,7 @@ sudo pacman -S ark btop iperf3 mangohud mpv qbittorrent steam tree unrar
 You need to install `yay` before using this command.
 
 ```
-yay -S anki arttime-git catppuccin-cursors-mocha catppuccin-gtk-theme-git cloudflare-warp-bin nomacs papirus-folders-catppuccin-git pfetch proton-cachyos proton-ge-custom-bin qt6ct-kde sleepy-launcher-bin spicetify-cli spotify unimatrix-git waytrogen wlogout yay zen-browser-bin zoom
+yay -S anki arttime-git catppuccin-cursors-mocha catppuccin-gtk-theme-git cloudflare-warp-bin nomacs papirus-folders-catppuccin-git pfetch proton-cachyos proton-ge-custom-bin qt6ct-kde sleepy-launcher-bin spicetify-cli spotify unimatrix-git waypaper wlogout yay zen-browser-bin zoom
 ```
 
 ---
